@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Калькулятор</title>
+  </head>
+  <body>
+    <div id="block_task">
+      <h1>Задание к семинару 3</h1>
+      <p>
+        Создать страницу, которая спрашивает у пользователя 2 числа, и действие,
+        которое необходимо совершить с этими числами (*, -, +, /). Выполнить
+        задание через конструкцию switch-case.
+      </p>
+    </div>
+
+    <div id="block_first_value">Первое число: <input id="num1" /></div>
+    <br />
+
+    <div id="block_operator_buttons">
+      <button id="plus" onclick="op='+'">Сложить</button>
+      <button id="minus" onclick="op='-'">Вычесть</button>
+      <button id="multiply" onclick="op='*'">Умножить</button>
+      <button id="divide" onclick="op='/'">Разделить</button>
+    </div>
+    <br />
+    <div id="block_second_value">Второе число: <input id="num2" /></div>
+    <br />
+
+    <div id="block_get_result">
+      <button id="get_result" onclick="calc()">Получить результат</button>
+    </div>
+
+    <div id="block_result">
+      <p id="result_value">
+        Результат: <b><output id="result">0</output></b>
+      </p>
+    </div>
+
+    <div id="block_debug">
+      <button id="javascript_get" onclick="document.location='script.js'">
+        Быстрый просмотр кода JavaScript
+      </button>
+      <button id="css_get" onclick="document.location='style.css'">
+        Быстрый просмотр кода CSS
+      </button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
